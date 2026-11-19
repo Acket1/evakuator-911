@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:;Эвакуатор 911;;;
+FN:Эвакуатор 911 (Ставрополь)
+ORG:Услуги эвакуатора
+TEL;TYPE=CELL,VOICE:+79624411911
+TEL;TYPE=CELL,VOICE:+79887685980
+ADR;TYPE=WORK:;;Свободная ул.\, 133/1;Ставрополь;;;Россия
+URL:https://evakuator-stavropol.vercel.app
+NOTE:Эвакуатор круглосуточно. Платформа 5\,9 м\, до 3\,5 т.
+END:VCARD

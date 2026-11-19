@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Дизайн разделов — доска</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="ideas3.css">
+</head>
+<body>
+
+<header class="top">
+  <div>
+    <h1>Как переделать разделы</h1>
+    <p>24 варианта дизайна. Анимированные макеты показывают движение.</p>
+  </div>
+  <div class="legend"><span class="tag tag--top">советую</span><span class="tag tag--need">нужно фото</span></div>
+</header>
+
+<!-- ===== ПЕРВЫЙ ЭКРАН ===== -->
+<section class="sec"><h2><b>01</b>Первый экран</h2><div class="grid">
+
+<article class="idea"><div class="m m1">
+  <p class="m1__h">Эвакуатор<br><span>в Ставрополе.</span></p>
+  <svg viewBox="0 0 400 250" aria-hidden="true">
+    <path id="road1" class="rd-base" d="M-20 240 C 120 230, 180 160, 260 140 S 360 80, 420 60"/>
+    <path class="rd-edge" d="M-20 240 C 120 230, 180 160, 260 140 S 360 80, 420 60"/>
+    <path class="rd-dash" d="M-20 240 C 120 230, 180 160, 260 140 S 360 80, 420 60"/>
+    <g class="truck-ic">
+      <rect x="-26" y="-12" width="34" height="8" rx="2" class="plat"/>
+      <path d="M8 -20 h12 l8 8 v12 h-20z" class="cab"/>
+      <rect x="-22" y="-26" width="22" height="14" rx="4" class="car"/>
+      <circle cx="-16" cy="0" r="4"/><circle cx="20" cy="0" r="4"/>
+      <animateMotion dur="6s" repeatCount="indefinite" rotate="auto"><mpath href="#road1"/></animateMotion>
+    </g>
+  </svg>
+</div><h3><span>1</span>Газель едет по дороге</h3><p>Вырезанная машина проезжает по дороге на фоне, пока крутишь страницу.</p><span class="tag tag--need">нужно фото в профиль</span></article>
+
+<article class="idea"><div class="m m2">
+  <p class="m2__h">Эвакуатор в Ставрополе.</p>
+  <div class="m2__card"><img src="img/bmw.jpg" alt=""></div>
+  <span class="scroll-hint">прокрутка</span>
+</div><h3><span>2</span>Карточка раскрывается во весь экран</h3><p>При прокрутке фото растёт из карточки до всего экрана.</p></article>
+
+<article class="idea"><div class="m m3">
+  <div class="m3__text"><p>Эвакуатор<br>в Ставрополе.</p><span class="pill">Вызвать</span></div>
+  <div class="ring"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" class="r-bg"/><circle cx="60" cy="60" r="52" class="r-fg"/></svg><b>15</b><span>минут</span></div>
+</div><h3><span>3</span>Огромная цифра «15 мин»</h3><p>Кольцо заполняется синим, как прогресс. Фото уходит на второй план.</p></article>
+
+</div></section>
+
+<!-- ===== ЧТО СЛУЧИЛОСЬ ===== -->
+<section class="sec"><h2><b>02</b>Что случилось</h2><div class="grid">
+
+<article class="idea"><div class="m m4">
+  <div class="tile on"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="16" height="11" rx="2"/><path d="M21 11v3M7 12h4M9 10v4"/></svg><span>Не заводится</span></div>
+  <div class="tile"><svg viewBox="0 0 24 24"><path d="M3 15l4-6 4 4 3-7 3 5 4-2"/><path d="M3 20h18"/></svg><span>ДТП</span></div>
+  <div class="tile"><svg viewBox="0 0 24 24"><path d="M2 16c3-2 5 2 8 0s5 2 8 0 3 0 4 0M2 20c3-2 5 2 8 0s5 2 8 0"/><circle cx="12" cy="8" r="3"/></svg><span>Застрял</span></div>
+  <div class="tile"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 4v5M12 15v5M4 12h5M15 12h5"/></svg><span>Колёса</span></div>
+  <div class="tile"><svg viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8 17c6-1 2-9 8-10"/></svg><span>Межгород</span></div>
+  <div class="tile"><svg viewBox="0 0 24 24"><path d="M3 19h11v-5H9l-2-3H3zM14 14l5-8 3 4"/><path d="M2 21h13"/></svg><span>Спецтехника</span></div>
+  <div class="tile"><svg viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l2 2M15 8l2 2"/></svg><span>Купленная</span></div>
+  <div class="tile"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/></svg><span>Шиномонтаж</span></div>
+  <div class="tile"><svg viewBox="0 0 24 24"><circle cx="5" cy="16" r="3.5"/><circle cx="19" cy="16" r="3.5"/><path d="M5 16l5-6h5l4 6M12 10l2-4h3"/></svg><span>Мото</span></div>
+</div><h3><span>4</span>Плитки с иконками</h3><p>Сетка 3×3 с крупными иконками. Нажал, и плитка раскрывается с ответом.</p><span class="tag tag--top">советую</span></article>
+
+<article class="idea"><div class="m m5">
+  <ul class="m5__list"><li class="on">Не заводится</li><li>После ДТП</li><li>Застрял</li><li>Межгород</li></ul>
+  <div class="m5__phone">
+    <p class="m5__ttl">Не заводится</p>
+    <p class="m5__row"><span>Что везём</span><b>Легковой</b></p>
+    <p class="m5__row"><span>Цена</span><b>от 2 000 ₽</b></p>
+    <p class="m5__row"><span>Подача</span><b>от 15 мин</b></p>
+    <span class="m5__btn">Заказать</span>
+  </div>
+</div><h3><span>5</span>Как приложение такси</h3><p>Слева ситуации, справа «экран заказа» в телефоне меняется.</p></article>
+
+<article class="idea"><div class="m m6">
+  <div class="slides">
+    <div class="sl"><img src="img/audi.jpg" alt=""><p><b>После ДТП</b>от 2 000 ₽</p></div>
+    <div class="sl"><img src="img/bmwx2.jpg" alt=""><p><b>Застрял</b>лебёдка</p></div>
+    <div class="sl"><img src="img/excavator.jpg" alt=""><p><b>Спецтехника</b>от 3 700 ₽</p></div>
+  </div>
+</div><h3><span>6</span>Большие карточки с фото</h3><p>Листаются пальцем вбок, текст прямо на фото.</p></article>
+
+</div></section>
+
+<!-- ===== РЕЙСЫ ===== -->
+<section class="sec"><h2><b>03</b>Рейсы</h2><div class="grid">
+
+<article class="idea"><div class="m m7">
+  <p class="m7__h">Последние<br>рейсы.</p>
+  <div class="m7__track">
+    <div class="tc"><img src="img/x5.jpg" alt=""><b>Михайловск</b></div>
+    <div class="tc"><img src="img/highlander.jpg" alt=""><b>Трасса</b></div>
+    <div class="tc"><img src="img/excavator.jpg" alt=""><b>Стройка</b></div>
+    <div class="tc"><img src="img/audi.jpg" alt=""><b>Дилер</b></div>
+    <div class="tc"><img src="img/bmw.jpg" alt=""><b>СТО</b></div>
+  </div>
+  <span class="scroll-hint">крутишь вниз, едет вбок</span>
+</div><h3><span>7</span>Горизонтальная лента</h3><p>Раздел прилипает, карточки едут вбок, пока крутишь колесо вниз.</p><span class="tag tag--top">советую</span></article>
+
+<article class="idea"><div class="m m8">
+  <span class="pt p1"></span><span class="pt p2"></span><span class="pt p3 on"></span><span class="pt p4"></span>
+  <div class="pop"><img src="img/x5.jpg" alt=""><p><b>BMW X5</b>Михайловск → СТО</p></div>
+  <span class="m8__city">Ставрополь</span>
+</div><h3><span>8</span>Карта с точками рейсов</h3><p>Навёл на точку, и всплывает фото с подписью.</p></article>
+
+<article class="idea"><div class="m m9">
+  <div class="st"><span class="bars"><i class="a1"></i><i></i><i></i></span><img src="img/bmw.jpg" alt=""></div>
+  <div class="st"><span class="bars"><i class="f"></i><i class="a2"></i><i></i></span><img src="img/bmwx2.jpg" alt=""></div>
+  <div class="st"><span class="bars"><i class="f"></i><i class="f"></i><i class="a3"></i></span><img src="img/excavator.jpg" alt=""></div>
+</div><h3><span>9</span>Как сторис</h3><p>Вертикальные фото на всю высоту, полоски сверху, листаются сами.</p></article>
+
+</div></section>
+
+<!-- ===== ОТЗЫВЫ ===== -->
+<section class="sec"><h2><b>04</b>Отзывы</h2><div class="grid">
+
+<article class="idea"><div class="m m10">
+  <div class="qcol">
+    <p class="qq">Приехал <mark>через 15 минут</mark> после звонка<em>Жанна И.</em></p>
+    <p class="qq">Стоимость <mark>озвучили заранее</mark><em>Павел С.</em></p>
+  </div>
+  <div class="qcol">
+    <p class="qq">Платформа <mark>чистая</mark><em>Polina</em></p>
+    <p class="qq"><mark>Ювелирно</mark> погрузил машину<em>Владимир</em></p>
+  </div>
+  <div class="qcol">
+    <p class="qq">Привезли <mark>сразу на СТО</mark><em>Жанна И.</em></p>
+    <p class="qq"><mark>Быстро, не дорого</mark><em>Роман</em></p>
+  </div>
+</div><h3><span>10</span>Стена цитат</h3><p>Короткие фразы из настоящих отзывов, ключевые слова подсвечены.</p><span class="tag tag--top">советую</span></article>
+
+<article class="idea"><div class="m m11">
+  <div class="bq"><p class="q1">«Честный, культурный и&nbsp;опытный водитель»</p><p class="q2">«Сработал чётко, быстро и&nbsp;без нервов»</p></div>
+  <div class="m11__ft"><span class="who">Отзыв с Яндекс Карт</span><span class="nav-arr"><i>‹</i><i>›</i></span></div>
+</div><h3><span>11</span>Одна огромная цитата</h3><p>На весь экран, меняется по стрелкам.</p></article>
+
+<article class="idea"><div class="m m12">
+  <div class="m12__big"><b>4,9</b><span>27 оценок</span></div>
+  <div class="dist">
+    <p><span>5★</span><i style="--w:92%"></i></p>
+    <p><span>4★</span><i style="--w:6%"></i></p>
+    <p><span>3★</span><i style="--w:2%"></i></p>
+    <p><span>2★</span><i style="--w:0%"></i></p>
+    <p><span>1★</span><i style="--w:0%"></i></p>
+    <em>распределение для примера, подтянем из Яндекса</em>
+  </div>
+</div><h3><span>12</span>Рейтинг как инфографика</h3><p>Гигантское «4,9» и полоски по звёздам.</p></article>
+
+</div></section>
+
+<!-- ===== МАШИНА ===== -->
+<section class="sec"><h2><b>05</b>Машина</h2><div class="grid">
+
+<article class="idea"><div class="m m13">
+  <svg viewBox="0 0 400 200" aria-hidden="true">
+    <g class="bp-grid"><path d="M0 40H400M0 80H400M0 120H400M0 160H400M80 0V200M160 0V200M240 0V200M320 0V200"/></g>
+    <g class="bp">
+      <path d="M30 128 L40 114 H290 V128 Z"/>
+      <path d="M290 74 H338 L366 104 V142 H290 Z"/>
+      <path d="M298 82 H332 L352 104 H298 Z"/>
+      <path d="M30 128 H366 V142 H30"/>
+      <circle cx="84" cy="148" r="15"/><circle cx="116" cy="148" r="15"/><circle cx="330" cy="148" r="15"/>
+    </g>
+    <g class="dim"><path d="M40 52H290M40 44V60M290 44V60"/><text x="140" y="40">5,9 м</text></g>
+    <g class="dim d2"><path d="M384 74V142M378 74H390M378 142H390"/><text x="350" y="64">2,2 м</text></g>
+  </svg>
+</div><h3><span>13</span>Чертёж Газели</h3><p>Синие линии прорисовываются сами при прокрутке.</p><span class="tag tag--top">советую</span></article>
+
+<article class="idea"><div class="m m14">
+  <div class="tilt"><img src="img/highlander.jpg" alt=""></div>
+  <span class="co c1"><i></i>маячок</span>
+  <span class="co c2"><i></i>лебёдка</span>
+  <span class="co c3"><i></i>платформа 5,9 м</span>
+</div><h3><span>14</span>Фото с 3D-наклоном</h3><p>Наклоняется за мышкой, выноски подписывают детали.</p></article>
+
+<article class="idea"><div class="m m15">
+  <span class="sel">Toyota Camry<svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span>
+  <div class="deck">
+    <svg class="car" viewBox="0 0 120 40"><path d="M8 28 Q14 14 34 12 L72 12 Q88 14 96 24 L114 26 V34 H4 V28Z"/><circle cx="28" cy="34" r="6"/><circle cx="92" cy="34" r="6"/></svg>
+    <i class="deck__line"></i>
+    <span class="deck__ruler"><b>4,9 м</b> из 5,9 м — влезет</span>
+  </div>
+</div><h3><span>15</span>«Влезет ли моя машина?»</h3><p>Выбрал марку, силуэт встаёт на платформу в масштабе.</p></article>
+
+</div></section>
+
+<!-- ===== КУДА ЕДЕМ ===== -->
+<section class="sec"><h2><b>06</b>Куда едем</h2><div class="grid">
+
+<article class="idea"><div class="m m16">
+  <span class="c c60"><em>60 мин</em></span><span class="c c30"><em>30 мин</em></span><span class="c c15"><em>15 мин</em></span>
+  <span class="ctr"></span><span class="lbl l0">Ставрополь</span>
+  <span class="town t1"></span><span class="town t2 on"></span><span class="town t3"></span><span class="town t4"></span>
+  <span class="tip">Михайловск<b>~30 мин</b></span>
+</div><h3><span>16</span>Карта края в синих тонах</h3><p>Круги времени подачи, при наведении на город видно время.</p></article>
+
+<article class="idea"><div class="m m17">
+  <p class="hd"><span>ГОРОД</span><span>ПОДАЧА</span></p>
+  <p><span class="fl">СТАВРОПОЛЬ</span><span class="fl">15 МИН</span></p>
+  <p><span class="fl d1">МИХАЙЛОВСК</span><span class="fl d1">30 МИН</span></p>
+  <p><span class="fl d2">НАДЕЖДА</span><span class="fl d2">30 МИН</span></p>
+  <p><span class="fl d3">НЕВИННОМЫССК</span><span class="fl d3">60 МИН</span></p>
+</div><h3><span>17</span>Табло как на вокзале</h3><p>Строки перещёлкиваются при появлении.</p></article>
+
+</div></section>
+
+<!-- ===== ВОПРОСЫ ===== -->
+<section class="sec"><h2><b>07</b>Вопросы</h2><div class="grid">
+
+<article class="idea"><div class="m m18">
+  <p class="bb me">Ночью дороже?</p>
+  <p class="bb">Нет, цену назову сразу по&nbsp;телефону.<em>Иван</em></p>
+  <p class="bb me">Отвезёте сразу в сервис?</p>
+  <p class="bb typing"><i></i><i></i><i></i></p>
+</div><h3><span>18</span>Вопросы как переписка</h3><p>Вопрос от клиента, ответ от Ивана, появляются по очереди с «печатает…».</p><span class="tag tag--top">советую</span></article>
+
+<article class="idea"><div class="m m19">
+  <div class="fc"><b>Ночью дороже?</b><p>Цену называем сразу при звонке.</p></div>
+  <div class="fc"><b>Какие документы?</b><p>СТС или ПТС и паспорт.</p></div>
+  <div class="fc"><b>Как оплатить?</b><p>Наличными, картой, переводом.</p></div>
+  <div class="fc"><b>Межгород?</b><p>50 ₽ за километр.</p></div>
+</div><h3><span>19</span>Две колонки карточек</h3><p>Все ответы видны сразу, без кликов.</p></article>
+
+</div></section>
+
+<!-- ===== КОНТАКТЫ ===== -->
+<section class="sec"><h2><b>08</b>Контакты</h2><div class="grid">
+
+<article class="idea"><div class="m m20">
+  <span class="m20__l">Звоните</span>
+  <p class="digits"><i>+7</i><i>&nbsp;962</i><i>&nbsp;441</i><i>-19</i><i>-11</i></p>
+  <span class="m20__r">круглосуточно</span>
+</div><h3><span>20</span>Номер на всю ширину</h3><p>Цифры «набираются» по одной при появлении.</p></article>
+
+<article class="idea"><div class="m m21">
+  <div class="lanes"><i></i><i></i><i></i></div>
+  <span class="lamp l"></span><span class="lamp r"></span>
+  <div class="m21__txt"><span>Сломались ночью?</span><b>+7 962 441-19-11</b></div>
+</div><h3><span>21</span>Финал «ночная трасса»</h3><p>Тёмный экран, свет фар, бегущая разметка, по центру номер.</p><span class="tag tag--top">советую</span></article>
+
+</div></section>
+
+<!-- ===== ЧЕРЕЗ ВЕСЬ САЙТ ===== -->
+<section class="sec"><h2><b>09</b>Через весь сайт</h2><div class="grid">
+
+<article class="idea"><div class="m m22">
+  <div class="stk s1"><b>Что случилось?</b></div>
+  <div class="stk s2"><b>Рейсы</b></div>
+  <div class="stk s3"><b>Отзывы</b></div>
+</div><h3><span>22</span>Разделы наезжают стопкой</h3><p>Каждый следующий раздел накрывает предыдущий, как карточки.</p></article>
+
+<article class="idea"><div class="m m23">
+  <div class="blk">Отзывы</div>
+  <div class="chev"></div>
+  <div class="blk">Машина</div>
+  <div class="dash"></div>
+  <div class="blk">Куда едем</div>
+</div><h3><span>23</span>Фирменный разделитель</h3><p>Между разделами шеврон, как на отбойнике, или дорожная разметка.</p></article>
+
+<article class="idea"><div class="m m24">
+  <div class="mini">
+    <span class="mini__nav"></span>
+    <b>Эвакуатор<br>в Ставрополе.</b>
+    <span class="mini__btn"></span>
+    <span class="sun"></span>
+  </div>
+  <span class="clock">14:20 / 23:40</span>
+</div><h3><span>24</span>Ночной режим сам</h3><p>Вечером по часам посетителя сайт темнеет.</p></article>
+
+</div></section>
+
+<footer class="end">Советую: 4, 7, 10, 13, 18, 21. Самый сильный: 1, если будет фото Газели в профиль.</footer>
+</body>
+</html>

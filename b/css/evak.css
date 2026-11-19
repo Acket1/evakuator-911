@@ -1,0 +1,61 @@
+/* Доработки шаблона CarServ под Эвакуатор 911 */
+:root { --primary: #FF6B1A; --secondary: #0B2154; }
+
+/* первый экран: фото на всю высоту */
+#header-carousel .carousel-item { height: min(88vh, 820px); min-height: 520px; }
+#header-carousel .hero-bg { height: 100%; object-fit: cover; }
+.carousel-caption { background: rgba(11, 33, 84, .72); }
+#header-carousel .carousel-item.active .hero-bg { animation: kenburns 9s ease-out both; }
+@keyframes kenburns { from { transform: scale(1.12); } to { transform: scale(1); } }
+
+.hero-card {
+  margin-left: auto; background: var(--primary); color: #fff; padding: 36px 44px;
+  display: flex; flex-direction: column; gap: 6px; font-size: 18px; max-width: 360px;
+}
+.hero-card__price { font-family: 'Roboto Condensed', sans-serif; font-weight: 700; font-size: 64px; line-height: 1; }
+
+/* преимущества */
+.feature { height: 100%; transition: transform .4s, box-shadow .4s; }
+.feature:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(11, 33, 84, .12); }
+
+/* цифры */
+.fact { background: var(--secondary) !important; }
+.fact h2 { font-size: 56px; }
+
+/* цены: одинаковые карточки */
+.price-img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; transition: transform .6s; }
+.team-item:hover .price-img { transform: scale(1.06); }
+.team-item h5 { font-size: 28px; color: var(--secondary); }
+
+/* отзывы */
+.praise { display: grid; gap: 22px; }
+.praise__row { display: grid; grid-template-columns: 1fr auto; row-gap: 8px; font-size: 18px; }
+.praise__row b { color: var(--secondary); }
+.praise__row i { grid-column: 1 / -1; height: 12px; background: #F2F2F2; position: relative; overflow: hidden; }
+.praise__row i::after {
+  content: ""; position: absolute; inset: 0 auto 0 0; width: var(--w); background: var(--primary);
+  transform-origin: left; animation: grow 1.4s cubic-bezier(.22, 1, .36, 1) both;
+}
+@keyframes grow { from { transform: scaleX(0); } }
+
+/* вопросы */
+.accordion-button:not(.collapsed) { color: var(--secondary); background: #FFF1E8; box-shadow: none; }
+.accordion-button:focus { box-shadow: 0 0 0 .2rem rgba(255, 107, 26, .3); }
+.accordion-button { font-family: 'Roboto Condensed', sans-serif; font-weight: 700; font-size: 18px; }
+
+/* кнопка звонка на телефоне */
+.callfab {
+  position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 98; padding: 16px; font-size: 18px;
+  box-shadow: 0 10px 30px rgba(255, 107, 26, .45);
+}
+@media (max-width: 991.98px) {
+  .back-to-top { display: none !important; }
+  .footer { padding-bottom: 80px; }
+  .navbar-brand h2 { font-size: 22px; }
+}
+@media (max-width: 768px) {
+  #header-carousel .carousel-item { height: 82vh; }
+  .display-3 { font-size: 40px; }
+}
+.hero-card__price { white-space: nowrap; font-size: 56px; }
+.footer .btn.btn-link { text-transform: none; }
