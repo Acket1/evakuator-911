@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www.evacuator-911-stav.ru" }],
+      "destination": "https://evacuator-911-stav.ru/$1",
+      "permanent": true
+    }
+  ]
+}
